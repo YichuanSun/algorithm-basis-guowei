@@ -16,7 +16,7 @@ int main()	{
 	i=Scan();
 	Operation(i);
 	double ans=num.top(); 
-	printf("%.6f\n",ans);
+	printf("%f\n",ans);
 	return 0;
 }
 int Scan()	{
