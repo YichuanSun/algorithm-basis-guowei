@@ -13,7 +13,7 @@ int main()	{
 int expression_value()	{	//求一个表达式的值 
 	int result=term_value();
 	bool more=true;
-	while (more)	{
+	while (true)	{
 		char op=cin.peek();
 		if (op=='+'||op=='-')	{
 			cin.get();
