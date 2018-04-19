@@ -5,7 +5,7 @@ using namespace std;
 const int maxn=5010;
 struct Node{
 	int x,y;
-	bool operator<(const Node&rhs)	const {		//运算符重构，让排序能实现 
+	bool operator<(const Node&rhs)	const {		//运算符重载，让排序能实现 
 		return x<rhs.x||(x==rhs.x&&y<rhs.y);
 	}
 }nodes[maxn];
