@@ -1,13 +1,10 @@
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 using namespace std;
-int sqr(int n)	{
-	int i=1;
-	while (i*i<n)	i++;
-	return i;
-}
 bool isPrime(int n)	{
-	for (int i=2;i<=sqr(n);i++)	
+	int sqr=sqrt(n);
+	for (int i=2;i<=sqr;i++)	
 		if (n%i==0&&n!=2)	return false;
 	return true;
 }
