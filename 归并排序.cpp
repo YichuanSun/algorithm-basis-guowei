@@ -29,7 +29,7 @@ void Merge(int a[],int s,int m,int e,int tmp[])	{
 }
 void MergeSort(int a[],int s,int e,int tmp[])	{
 	if (s<e)	{
-		int m=s+(e-s)/2;
+		int m=s+(e-s)/2;			//Îª·ÀÖ¹s+eÒç³ö 
 		MergeSort(a,s,m,tmp);
 		MergeSort(a,m+1,e,tmp);
 		Merge(a,s,m,e,tmp); 
